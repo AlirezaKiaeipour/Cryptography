@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>602</width>
+    <height>531</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>602</width>
+    <height>531</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cryptography</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/icon.png</normaloff>img/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(224, 233, 250);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>661</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>661</width>
+      <height>531</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>661</width>
+      <height>531</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(224, 233, 250);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Encrypt</string>
+     </attribute>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plain Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_plain_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cipher Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_cipher_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_public_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Public Key:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_encrypt_rsa">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Encrypt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_en">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Decrypt</string>
+     </attribute>
+     <widget class="QTextEdit" name="textbox_Private_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cipher Text:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Private Key:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_plain_rsa_de">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_decrypt_rsa">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Decrypt</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_cipher_rsa_de">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plain Text:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_de">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Signing</string>
+     </attribute>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plain Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_plain_sign_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_private_sign_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Private Key:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_signed_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_signing_rsa">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Signing</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Signed Text:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_sig">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Verification</string>
+     </attribute>
+     <widget class="QTextEdit" name="textbox_plain_veri_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Public Key:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plain Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_public_veri_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_verification_rsa">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Verification</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Signed Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textbox_signed_veri_rsa">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_ver">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Generate Key</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Public Key:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Private Key:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="text_public">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>120</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 13pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="text_private">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 13pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_generate">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 14pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Generate Key</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_gen">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>581</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 114, 187);
+font: 700 italic 17pt &quot;Segoe UI&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>RSA Key Generator</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 114, 187);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>* The Public Key &amp; Private Key expires after 20 seconds.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Hashing</string>
+     </attribute>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plain Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="text_plain_hash">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 11pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_hash">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 14pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#63c132;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(81, 157, 41);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Hash</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hashed Text:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="text_hashed_hash">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>200</y>
+        <width>421</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(34, 109, 121);
+font: 700 10pt &quot;Segoe UI&quot;;
+background-color: rgb(213, 229, 235);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Hash Algorithm:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combobox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>101</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>MD5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHA-1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHA-224</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHA-256</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHA-384</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHA-512</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="btn_clean_hash">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>370</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 700 13pt &quot;Segoe UI&quot;;
+border-radius:12%;
+background-color:#ff6978;
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed{
+	background-color: rgb(227, 93, 107);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Clean</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 114, 187);
+color: rgb(255, 255, 255);
+font: 700 italic 20pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Cryptography</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>602</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="help_2"/>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="help">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+  <action name="help_2">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
